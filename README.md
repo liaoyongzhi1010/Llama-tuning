@@ -1,5 +1,7 @@
 # 微调
-```python train.py```
+```
+python train.py
+```
 # 部署
 ## GGUF
 ```

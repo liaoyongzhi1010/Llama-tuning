@@ -28,3 +28,17 @@ if False:
         token = "",
     )
 ```
+## VLLM
+```
+# Merge to 16bit
+if False: model.save_pretrained_merged("model", tokenizer, save_method = "merged_16bit",)
+if False: model.push_to_hub_merged("hf/model", tokenizer, save_method = "merged_16bit", token = "")
+
+# Merge to 4bit
+if False: model.save_pretrained_merged("model", tokenizer, save_method = "merged_4bit",)
+if False: model.push_to_hub_merged("hf/model", tokenizer, save_method = "merged_4bit", token = "")
+
+# Just LoRA adapters
+if False: model.save_pretrained_merged("model", tokenizer, save_method = "lora",)
+if False: model.push_to_hub_merged("hf/model", tokenizer, save_method = "lora", token = "")
+```
